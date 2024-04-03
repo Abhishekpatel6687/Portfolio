@@ -1,11 +1,11 @@
-// import Footer from "@/components/Footer";
-// import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 // import Image from "next/image";
 // import { Images } from "@/constants/Images";
 // import imageGirl from "../../public/images/girl.png"
-// import Service from "@/components/Service";
-// import Plans from "@/components/Plans";
-// import About from "@/components/About";
+import Service from "@/components/Services";
+import Plans from "@/components/Plans";
+import About from "@/components/About";
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
 // ]
   return (
     <main className="min-h-full max-w-full ">
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="md:flex justify-center items-center">
           <div className="md:w-1/2 p-12 md:p-12 ">
             <h1 className="font-bold  sm:m-30 xl:text-5xl lg:text-4xl md:text-3xl sm:text-5xl xs:text-4xl">Up Your <span className="text-primary-600">Skills</span> To
@@ -53,10 +53,10 @@ export default function Home() {
           {/* <Image width={300} height={300} src={imageGirl} className="xs:w-48 sm:w-60  md:w-80 object-cover border-4 rounded-full bg-primary-600 flex items-center content-center" alt="girlImg" /> */}
           </div>
       </div>
-      {/* <About/>
+      <About/>
       <Service/>
       <Plans/>
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }
